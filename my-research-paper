@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anatomy and Evolution Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Anatomy and Evolution Insights</h1>
+            <p>Your go-to platform for research papers on anatomy and human evolution.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#papers">Research Papers</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>Welcome to Anatomy and Evolution Insights, a platform dedicated to publishing cutting-edge research papers on the
+            anatomy of humans and evolutionary studies. Explore and discover valuable insights on various topics.</p>
+    </section>
+
+    <section id="papers" class="section">
+        <h2>Research Papers</h2>
+        <div class="paper-list">
+            <div class="paper">
+                <h3>Understanding Human Evolution</h3>
+                <p>This paper explores the evolutionary journey of humans, examining key anatomical changes over millions of years.</p>
+                <button onclick="toggleDetails('paper1')">Read More</button>
+                <div id="paper1" class="paper-details" style="display: none;">
+                    <p>Detailed content of the paper...</p>
+                </div>
+            </div>
+            <div class="paper">
+                <h3>The Human Skeletal System: A Comparative Study</h3>
+                <p>An in-depth analysis of human skeletal anatomy compared to other primates and mammals.</p>
+                <button onclick="toggleDetails('paper2')">Read More</button>
+                <div id="paper2" class="paper-details" style="display: none;">
+                    <p>Detailed content of the paper...</p>
+                </div>
+            </div>
+            <div class="paper">
+                <h3>Evolutionary Adaptations in Human Anatomy</h3>
+                <p>This research discusses the anatomical adaptations in humans that have evolved over time to enhance survival.</p>
+                <button onclick="toggleDetails('paper3')">Read More</button>
+                <div id="paper3" class="paper-details" style="display: none;">
+                    <p>Detailed content of the paper...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>At Anatomy and Evolution Insights, we are dedicated to fostering knowledge and research on human anatomy and evolutionary
+            biology. Our mission is to provide a platform for sharing groundbreaking research papers that help us understand the human
+            body and its evolution over time.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Have questions or inquiries? Reach out to us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AnatomyAndEvolutionInsights.com | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #005c99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styles */
+.section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #005c99;
+}
+
+.paper-list {
+    margin-top: 20px;
+}
+
+.paper {
+    margin-bottom: 20px;
+}
+
+.paper h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.paper p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.paper button {
+    background-color: #005c99;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.paper button:hover {
+    background-color: #004080;
+}
+
+.paper-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #005c99;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004080;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005c99;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}// Toggle the visibility of paper details
+function toggleDetails(paperId) {
+    const paperDetails = document.getElementById(paperId);
+    if (paperDetails.style.display === "none") {
+        paperDetails.style.display = "block";
+    } else {
+        paperDetails.style.display = "none";
+    }
+}
